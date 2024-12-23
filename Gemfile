@@ -4,6 +4,7 @@ gem "jekyll", "~> 4.0"
 gem "webrick", "~> 1.7"
 
 group :jekyll_plugins do
+    gem 'jekyll-toc'
     gem 'wdm', '>= 0.1.0', platforms: [:mingw, :x64_mingw, :mswin]
     gem 'classifier-reborn'
     gem 'jekyll-archives'
@@ -24,6 +25,10 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem 'unicode_utils'
 end
+
+toc:
+  min_level: 1
+  max_level: 3
 
 group :other_plugins do
     gem 'css_parser'
