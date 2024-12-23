@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
+
+gem "jekyll", "~> 4.0"
+gem "webrick", "~> 1.7"
+
 group :jekyll_plugins do
-    gem 'wdm', '>= 0.1.0'
+    gem 'wdm', '>= 0.1.0', platforms: [:mingw, :x64_mingw, :mswin]
     gem 'classifier-reborn'
-    gem 'jekyll'
     gem 'jekyll-archives'
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'
@@ -20,8 +23,8 @@ group :jekyll_plugins do
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'unicode_utils'
-    gem 'webrick'
 end
+
 group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
